@@ -1,12 +1,12 @@
 # Bluetooth Teste
 
-> Projeto desenvolvido para aplicar conhecimentos sobre implentação da função Bluetooth nos dois sistemas operacionais mais populares.
+> Projeto desenvolvido para aplicar conhecimentos sobre A implentação da função Bluetooth nos sistemas operacionais mais populares.
 
 ------------
 #### Dispositivos utilizados para testes
- - Galaxy A70 (Android 11)
- - Caixa de som genérica
- - Notebook (Windows 10)
+ - [Dual] Galaxy A70 (Android 11)
+ - [Dual] Notebook (Windows 10) 
+ - [Classic] Caixa de som genérica
    
 ------------
 #### Implementação
@@ -15,7 +15,8 @@
 
 #### Tipo
 - [x] Classic
-- [ ] BLE (Bluetooth Low Energy)
+- [ ] BLE
+- [ ] Dual
 
 
 *Caixas não marcadas demonstram que estão apenas no plano de desenvolvimento.*
