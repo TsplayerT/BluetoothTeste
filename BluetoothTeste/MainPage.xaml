@@ -1,0 +1,65 @@
+﻿<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="BluetoothTeste.MainPage">
+
+    <StackLayout>
+        <Button
+            IsEnabled="{Binding BotaoConectarHabilitado}"
+            Margin="10, 10, 10, 0"
+            Text="Conectar"
+            Clicked="BotaoConectar_Clicked"/>
+
+        <Label
+            Margin="0, 0, 0, 10"
+            HorizontalOptions="CenterAndExpand">
+
+            <Label.FormattedText>
+                <FormattedString>
+                    <Span
+                        Text="Hora no formato: "/>
+                    <Span
+                        Text="mm:ss:ffff"
+                        TextColor="Gray"/>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+
+        <CollectionView
+            x:Name="Lista"
+            ItemsSource="{Binding ListaInformacoes}"
+            VerticalOptions="FillAndExpand" >
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Label
+                        Padding="10, 0, 0, 0"
+                        BindingContext="{Binding .}" >
+
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span
+                                    Text="{Binding Hora}"
+                                    TextColor="#f22" />
+                                <Span
+                                    Text=": "
+                                    TextColor="#f22" />
+                                <Span
+                                    Text="{Binding Texto}"
+                                    TextColor="#bbb" />
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <Button
+            IsEnabled="{Binding BotaoCancelarHabilitado}"
+            Margin="10, 10, 10, 10"
+            Text="Cancelar Execuções"
+            Clicked="BotaoCancelar_Clicked"/>
+
+    </StackLayout>
+
+</ContentPage>
