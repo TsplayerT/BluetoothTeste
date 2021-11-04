@@ -1,20 +1,20 @@
 # Bluetooth Teste
 
-> Projeto desenvolvido para aplicar conhecimentos sobre A implenta√ß√£o da fun√ß√£o Bluetooth nos sistemas operacionais mais populares.
+> Projeto desenvolvido para aplicar conhecimentos sobre A implentaÁ„o da funÁ„o Bluetooth nos sistemas operacionais mais populares.
 
 ### Erros e problemas recorrentes
  - GATT com 133 (Disconnected) em onConnectionStateChange
  - Servidor (ListenUsingRfcommWithServiceRecord) nunca retorna BluetoothSocket
- - Necess√°rio permiss√£o de BLUETOOTH PRIVILEGED em SetPairingConfirmation
- - Stream.ReadAsync de BluetoothSocket n√£o conclui opera√ß√£o
+ - Necess·rio permiss„o de BLUETOOTH PRIVILEGED em SetPairingConfirmation
+ - Stream.ReadAsync de BluetoothSocket n„o conclui operaÁ„o
 
 ------------
 #### Dispositivos utilizados para testes
  - [Dual] Galaxy A70 (Android 11)
  - [Dual] Notebook (Windows 10) 
- - [Classic] Caixa de som gen√©rica
+ - [Classic] Caixa de som genÈrica
 
-#### Implementa√ß√£o
+#### ImplementaÁ„o
 - [x] Android
 - [ ] iOS
 
@@ -24,4 +24,4 @@
 - [ ] Dual
 
 
-*Caixas n√£o marcadas demonstram que est√£o apenas no plano de desenvolvimento.*
+*Caixas n„o marcadas demonstram que est„o apenas no plano de desenvolvimento.*
